@@ -1,0 +1,1270 @@
+/* src/components/HeroSection.css */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    background-color: #8A5EE4; /* or any color that blends with your design */
+    color: #fff;
+    padding: 0;
+    margin: -100px 0 0 0; /* Adjust this value to control how much of the hero section goes under the navbar */
+    text-align: center;
+    /* position: relative; */
+    z-index: -1; /* Make sure the hero section is behind the navbar */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero-button:hover {
+    background-color: #c70039;
+  }
+  
+  .hero-image {
+    max-width: 100%;
+    height: 120px; /* Ensures the image scales correctly */
+  }
+
+  .overlay-image {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    top: 80%; /* Adjust this value to control vertical positioning */
+    left: 42%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 50%; /* Scales the overlay image to cover half of the base image */
+    height: 220px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image2 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    top: 90%; /* Adjust this value to control vertical positioning */
+    left: 58%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 50%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image3 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    top: 55%; /* Adjust this value to control vertical positioning */
+    left: 85%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 50%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+    animation: grow 3.0s ease infinite;
+  }
+
+  @keyframes grow{
+       0%{
+          transform: scale(0.7);
+          
+       }
+       50%{
+        transform: scale(1);
+         background: inherit;
+       }
+       100%{
+         transform: scale(0.7);
+         background: inherit;
+       }
+  }
+
+  .overlay-image4 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    top: 110vh; /* Adjust this value to control vertical positioning */
+    left: 70%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 50%; /* Scales the overlay image to cover half of the base image */
+    height: 40px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image5 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    top: 110vh; /* Adjust this value to control vertical positioning */
+    left: 85%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 50%; /* Scales the overlay image to cover half of the base image */
+    height: 95px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image6 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 150px;
+    margin-left: -150px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 550px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image7 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 350px;
+    margin-left: -150px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 300px; /* Ensures correct aspect ratio */
+  }
+  
+  .overlay-image8 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -150px;
+    margin-left: -430px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 140px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image9 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -50px;
+    margin-left: -450px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 300px; /* Ensures correct aspect ratio */
+  }
+
+  .eid-section {
+    background-color: #8A5EE4; /* Purple background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 30px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 600px; /* Max width of the container */
+    margin: 20px auto; /* Center the section horizontally and add some margin */
+    margin-top: -30px;
+    font-family: Arial, sans-serif; /* Set a font for the text */
+  }
+  
+  .eid-text {
+    font-size: 18px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space between the text and the button */
+  }
+  
+  .eid-button {
+    background-color: #FFCC33; /* Yellow button color */
+    color: #333; /* Dark text color on the button */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 20px; /* Rounded button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size of the button */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  }
+  
+  .eid-button:hover {
+    background-color: #e6b800; /* Slightly darker yellow on hover */
+  }
+  
+  .overlay-image10 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -580px;
+    margin-left: 350px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 200px; /* Ensures correct aspect ratio */
+    animation: grow 3.0s ease infinite;
+  }
+
+  .overlay-image11 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -400px;
+    margin-left: 400px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 300px; /* Ensures correct aspect ratio */
+    animation:  floating ease 11s infinite;
+  }
+  
+  @keyframes movingfromtop{
+    from{
+        opacity: 0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);   
+    }
+  }
+
+  @keyframes floating{
+    0%{
+        transform: translate(0%, 0%) ;
+    }
+    25%{
+        transform: translate(5%, 15%) ;
+    }
+    50%{
+        transform: translate(10%, 5%) ;
+    }
+    75%{
+        transform: translate(0%, 15%) ;
+    }
+    100%{
+        transform: translate(0%, 0%) ;
+    }
+  }
+
+  .overlay-image12 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -650px;
+    margin-left: -550px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+  }
+  .overlay-image13 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -550px;
+    margin-left: -130px;
+    transform: translate(-50%, -50%) rotate(-20deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+    animation: grow 3.0s ease infinite;
+    
+  }
+
+  .overlay-image14 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -450px;
+    margin-left: 130px;
+    transform: rotate(40deg);
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image15 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -450px;
+    margin-left: -550px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+
+  .eid-section2 {
+    background-color: #8A5EE4; /* Purple background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 30px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 430px; /* Max width of the container */
+    margin: 20px auto; /* Center the section horizontally and add some margin */
+    margin-top: -350px;
+    font-family: Arial, sans-serif; /* Set a font for the text */
+  }
+  
+  .eid-text2 {
+    font-size: 18px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space between the text and the button */
+  }
+
+  .overlay-image16 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -50px;
+    margin-left: -550px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+  
+  .buttons-container {
+    display: flex; /* Use flexbox to align the buttons horizontally */
+    justify-content: center; /* Center the buttons in the container */
+    align-items: center; /* Center the buttons vertically */
+    gap: 20px; /* Add space between the buttons */
+    background-color: #8A5EE4; /* Purple background color */
+    padding: 20px; /* Padding around the container */
+    margin-top: 50px;
+    border-radius: 10px; /* Rounded corners for the container */
+  }
+  
+  .custom-button {
+    background-color: #FFCC33; /* Yellow background color */
+    color: #333; /* Dark text color */
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 20px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 15px; /* Font size of the button text */
+    width: 200px; /* Fixed width for all buttons */
+    height: 50px; /* Fixed height for all buttons */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  .custom-button:hover {
+    transform: translateY(-3px); /* Lift button on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  }
+  
+  .overlay-image17 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -150px;
+    margin-left: 750px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image18 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -650px;
+    margin-left: -550px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image19 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -650px;
+    margin-left: -550px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image20 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -450px;
+    margin-left: -550px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 80px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image21 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -350px;
+    margin-left: -350px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 80px; /* Ensures correct aspect ratio */
+  }
+
+  .eid-section3 {
+    background-color: #8A5EE4; /* Purple background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 30px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 580px; /* Max width of the container */
+    margin: 20px auto; /* Center the section horizontally and add some margin */
+    margin-top: -380px;
+    font-family: Arial, sans-serif; /* Set a font for the text */
+  }
+  
+  .eid-text3 {
+    font-size: 18px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space between the text and the button */
+  }
+
+  .overlay-image22 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -300px;
+    margin-left: 350px;
+    transform: rotate(30deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 110px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image23 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -340px;
+    margin-left: 390px;
+    transform: rotate(30deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 60px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image24 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 0px;
+    margin-left: -530px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 400px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image25 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 0px;
+    margin-left: -330px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 380px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image26 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 50px;
+    margin-left: -430px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 280px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image27 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 95px;
+    margin-left: -700px;
+    transform: rotate(8deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 250px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image28 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 40px;
+    margin-left: 390px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 140px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image29 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 20px;
+    margin-left: 330px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 70px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image30 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 20px;
+    margin-left: 390px;
+    transform: translate(-50%, -50%) scaleX(-1) rotate(10deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 70px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image31 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 10px;
+    margin-left: 420px;
+    transform: translate(-50%, -50%) scaleX(-1) rotate(20deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 80px; /* Ensures correct aspect ratio */
+  }
+ 
+  .overlay-image32 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -500px;
+    margin-left: -370px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 100px; /* Ensures correct aspect ratio */
+  }
+
+  .card-container {
+    display: flex;
+    gap: 20px;
+    margin-top: -650px;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-white {
+    background-image: url('../images/greetingElement01EN.e9ac88548a7ab96112be.png'); /* Replace with your white card image path */
+}
+
+.card-purple {
+    background-image: url('../images/greetingElement02EN.e2d085079bdb3ca51f10.png'); /* Replace with your purple card image path */
+}
+
+.overlay-image33 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -300px;
+    margin-left: 300px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 200px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+
+  .overlay-image34 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -840px;
+    margin-left: -550px;
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 230px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+
+  }
+
+
+.container {
+    text-align: center;
+    color: #6EE866; /* Green color for the heading */
+    margin-top: -850px;
+}
+
+.container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff; /* White color for the subtitle */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.button {
+    background-color: #FFC84D; /* Yellow color for the buttons */
+    color: #4A4A4A; /* Dark text color */
+    padding: 10px 80px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e5b240; /* Darker shade for hover */
+}
+
+.overlay-image35 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 240px;
+    margin-left: -750px;
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 530px; /* Ensures correct aspect ratio */
+  }
+
+  .eid-section4 {
+    background-color: #8A5EE4; /* Purple background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 30px; /* Padding around the content */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 380px; /* Max width of the container */
+    margin: 20px auto; /* Center the section horizontally and add some margin */
+    margin-top: 180px;
+    font-family: Arial, sans-serif; /* Set a font for the text */
+  }
+  
+  .eid-text4 {
+    font-size: 18px; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for better readability */
+    margin-bottom: 20px; /* Space between the text and the button */
+  }
+
+  .overlay-image36 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -640px;
+    margin-left: 400px;
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 660px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image37 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -40px;
+    margin-left: 100px;
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 160px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image38 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -40px;
+    margin-left: -110px;
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 230px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image39 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 240px;
+    margin-left: -550px;
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 230px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+ 
+  .overlay-image40 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 200px;
+    margin-left: 250px;
+    transform: translate(-50%, -50%) rotate(-50deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 80px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+
+  .overlay-image41 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 250px;
+    margin-left: 450px;
+    transform: translate(-50%, -50%) rotate(-30deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 60px; /* Ensures correct aspect ratio */
+    animation:  floating ease 6s infinite;
+  }
+
+  .container5 {
+    text-align: center;
+    color: #fff; /* White color for the text */
+    width: 80%;
+    margin-top: 380px;
+    margin-left: 100px;
+    max-width: 600px;
+}
+
+.container5 p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif; /* Set a font for the text */
+}
+
+.button-container5 {
+    margin-bottom: 30px;
+}
+
+.button5 {
+    background-color: #FFC84D; /* Yellow color for the button */
+    color: #4A4A4A; /* Dark text color */
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button5:hover {
+    background-color: #e5b240; /* Darker shade for hover */
+}
+
+.logo5 {
+    margin-top: 30px;
+}
+
+.logo5 img {
+    width: 100px; /* Adjust logo size */
+}
+
+.overlay-image42 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -90px;
+    margin-left: -600px;
+     /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 280px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image43 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -100px;
+    margin-left: 400px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+
+  }
+  .overlay-image44 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 50px;
+    margin-left: 380px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 180px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+
+  }
+  .overlay-image45 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -80px;
+    margin-left: -450px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+
+  }
+  .overlay-image46 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 0px;
+    margin-left: -630px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+
+  }
+  .overlay-image47 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 120px;
+    margin-left: -420px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 110px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+
+  }
+
+  .overlay-image48 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -180px;
+    margin-left: 0px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 310px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image49 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 50px;
+    margin-left: -130px;
+    transform: rotate(-60deg); /* Adjusts the initial rotation */
+    max-width: 100%; /* Scales the overlay image */
+    height: 220px; /* Ensures correct aspect ratio */
+    animation: floatingkite 9s ease infinite;
+}
+
+@keyframes floatingkite {
+    0% {
+        transform: translateY(0) rotate(-60deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(-45deg);
+    }
+    100% {
+        transform: translateY(0) rotate(-60deg);
+    }
+}
+  .overlay-image50 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 50px;
+    margin-left: 90px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 300px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+
+  .overlay-image51 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 50px;
+    margin-left: 290px;
+    transform: translate(-50%, -50%) rotate(50deg) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 300px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+
+  .overlay-image52 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 50px;
+    margin-left: -600px;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 250px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+  }
+  .overlay-image53 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 330px;
+    margin-left: -300px;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 110px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image54 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 400px;
+    margin-left: -600px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 220px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;    
+  }
+
+  .overlay-image55 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 450px;
+    margin-left: -500px;
+    transform: translate(-50%, -50%); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image56 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 20px;
+    margin-left: -300px;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 520px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image57 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -40px;
+    margin-left: 0px;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 920px; /* Ensures correct aspect ratio */
+    
+  }
+
+  .overlay-image58 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 200px;
+    margin-left: -400px;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 320px; /* Ensures correct aspect ratio */
+    
+  }
+
+  .overlay-image59 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -20px;
+    margin-left: -550px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+    
+  }
+
+  .overlay-image60 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -20px;
+    margin-left: -350px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 450px; /* Ensures correct aspect ratio */
+    
+  }
+
+  .overlay-image61 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 0px;
+    margin-left: -180px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 350px; /* Ensures correct aspect ratio */
+    
+  }
+  .overlay-image62 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -30px;
+    margin-left: 180px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 350px; /* Ensures correct aspect ratio */
+    
+  }
+  .overlay-image63 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -50px;
+    margin-left: -10px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 390px; /* Ensures correct aspect ratio */
+    
+  }
+  .overlay-image64 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 20px;
+    margin-left: 50px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 260px; /* Ensures correct aspect ratio */
+    
+  }
+
+  .overlay-image65 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 20px;
+    margin-left: 350px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 160px; /* Ensures correct aspect ratio */
+    
+  }
+  .overlay-image66 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -20px;
+    margin-left: 200px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 260px; /* Ensures correct aspect ratio */
+    
+  }
+  .overlay-image67 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 20px;
+    margin-left: 200px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 160px; /* Ensures correct aspect ratio */
+    
+  }
+  .overlay-image68 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -130px;
+    margin-left: 330px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 80px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+
+  }
+  .overlay-image69 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -150px;
+    margin-left: 550px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image70 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -160px;
+    margin-left: 520px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite; 
+  }
+
+  .overlay-image71 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: -80px;
+    margin-left: 450px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */
+    animation:  floating ease 9s infinite;
+ 
+  }
+
+  .overlay-image72 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 40px;
+    margin-left: 580px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */ 
+  }
+  .overlay-image73 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 40px;
+    margin-left: 460px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 200px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image74 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 150px;
+    margin-left: 400px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 250px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image75 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 150px;
+    margin-left: -620px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 50px; /* Ensures correct aspect ratio */ 
+  }
+  .overlay-image76 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 150px;
+    margin-left: -540px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 100px; /* Ensures correct aspect ratio */ 
+  }
+  .overlay-image77 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 170px;
+    margin-left: 30px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 150px; /* Ensures correct aspect ratio */ 
+  }
+  .overlay-image78 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 280px;
+    margin-left: -280px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 200px; /* Ensures correct aspect ratio */ 
+  }
+  .overlay-image79 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 170px;
+    margin-left: 100px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 180px; /* Ensures correct aspect ratio */ 
+  }
+  
+  .overlay-image80 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 170px;
+    margin-left: 90px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 170px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image81 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 170px;
+    margin-left: -250px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 280px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image82 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 280px;
+    margin-left: -620px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 60px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image83 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 300px;
+    margin-left: -540px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 50px; /* Ensures correct aspect ratio */ 
+  }
+  .overlay-image84 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 300px;
+    margin-left: -460px;
+    transform: translate(-50%, -50%) rotate(-50deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 90px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image85 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 300px;
+    margin-left: -350px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 190px; /* Ensures correct aspect ratio */ 
+  }
+
+  .overlay-image86 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 330px;
+    margin-left: -190px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image87 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 320px;
+    margin-left: -220px;
+    transform: translate(-50%, -50%) rotate(20deg); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 50px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image88 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 300px;
+    margin-left: -190px;
+    transform: translate(-50%, -50%) scaleX(-1); /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 50px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image89 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 300px;
+    margin-left: -200px;
+    transform: translate(-50%, -50%) scaleX(-1) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 60px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image90 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 280px;
+    margin-left: 390px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 120px; /* Ensures correct aspect ratio */
+  }
+
+  .container6 {
+    text-align: center;
+    color: #fff; /* White color for the text */
+    width: 90%;
+    margin-top: -280px;
+    max-width: 800px;
+}
+
+.button-container6 {
+    margin-bottom: 20px;
+}
+
+.button6 {
+    background-color: #FFC84D; /* Yellow color for the button */
+    color: #4A4A4A; /* Dark text color */
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button6:hover {
+    background-color: #e5b240; /* Darker shade for hover */
+}
+
+.logo-container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.logo-container6 img {
+    max-width: 200px;
+}
+
+.divider6 {
+    height: 60px;
+    width: 1px;
+    background-color: #fff; /* White color for the divider */
+}
+
+.overlay-image91 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 280px;
+    margin-left: 0px;
+    transform: translate(-50%, -50%) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 280px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image92 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 300px;
+    margin-left: -350px;
+    transform: translate(-50%, -50%) rotate(20deg) ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 280px; /* Ensures correct aspect ratio */
+  }
+
+  .overlay-image93 {
+    position: absolute; /* Allows positioning relative to .hero-content */
+    margin-top: 400px;
+    margin-left: 150px;
+    transform: translate(-50%, -50%)  ; /* Adjusts the positioning */
+    max-width: 100%; /* Scales the overlay image to cover half of the base image */
+    height: 280px; /* Ensures correct aspect ratio */
+  }
+
+  /* Toggle Switch Styles */
+.toggle-switch {
+    width: 80px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-knob {
+    width: 36px;
+    height: 36px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .toggle-knob .icon {
+    width: 20px;
+    height: 20px;
+    background: url('https://cdn-icons-png.flaticon.com/512/581/581601.png') no-repeat center center;
+    background-size: contain;
+  }
+  
+  .toggle-switch.active .toggle-knob {
+    left: 42px;
+    background-color: #111;
+  }
+  
+  
